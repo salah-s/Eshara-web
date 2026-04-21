@@ -1,5 +1,8 @@
 * {
         font-family: Roboto;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
 }
 
 
@@ -16,7 +19,7 @@ body {
 
 .header {
     display: flex;
-    height: 97px;
+    height: 12vh;
     background-color: #0F1214B3;
     justify-content: space-between  ;
     align-items: center;
@@ -114,7 +117,7 @@ body {
 }
 
 .footer {
-    height: 189px;
+    height: 18vh;
     width: 100vw;
     background-color: #0B0F12;
     display: flex;
@@ -191,4 +194,28 @@ body {
     margin-right:10px;
     font-weight: 900px;
     
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 100vw;
+    flex-grow: 1;
+}
+
+.main-content .buttons-section {
+    flex : 0 0 20%;
+    height: 20%;
+    width: 100%;
+    background-color: aqua;
+    flex-shrink: 0;
+}
+
+.main-content .main-section {
+    flex : 0 0 80%;
+    height: 80%;
+    width: 100%;
+    background-color: red;
+    flex-shrink: 0;
 }
